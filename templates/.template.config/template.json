@@ -1,0 +1,17 @@
+{
+  "author": "William Paciaroni <william.paciaroni97@gmailcom>",
+  "classifications": [ "WebApi" ],
+  "description": "",
+  "name": "Basic template to create simple web app",
+  "defaultName": "Basic Template",
+  "identity": "BasicTemplate",
+  "groupIdentity": "BasicTemplate",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "shortName": "basic-template",
+  "sourceName": "Bsctmplt",
+  "guids": [],
+
+}
