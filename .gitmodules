@@ -1,0 +1,3 @@
+[submodule "basic-framework"]
+	path = basic-framework
+	url = https://github.com/williampaciaroni/basic-framework.git
