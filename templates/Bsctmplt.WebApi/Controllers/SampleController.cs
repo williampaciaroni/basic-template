@@ -7,6 +7,7 @@ using Bsctmplt.BusinessLayer;
 using Bsctmplt.EntityFrameworkCore;
 using Bsctmplt.WebApi.Contracts.Sample;
 using Bsctmplt.Dto.Sample;
+using Bsctmplt.Repository;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -17,15 +18,15 @@ namespace Bsctmplt.WebApi.Controllers
     {
         private SampleBusinessLayer _BusinessLayer;
 
-        public SampleController(BsctmpltDbContext context)
+        public SampleController(ISampleRepository repository)
         {
-            _BusinessLayer = new SampleBusinessLayer(context);
+            _BusinessLayer = new SampleBusinessLayer(repository);
         }
 
         [HttpGet]
         public IActionResult Get()
         {
-            return Ok(_BusinessLayer.GetValues());
+            return Ok(_BusinessLayer.GetAll());
         }
 
         // GET api/values/5

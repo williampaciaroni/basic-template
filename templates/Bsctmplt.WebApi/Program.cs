@@ -1,4 +1,6 @@
+using Bsctmplt.EntityFrameworkCore;
 using Bsctmplt.WebApi;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +15,13 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+}
+
+using (var scope = app.Services.CreateScope())
+{
+    using var context = scope.ServiceProvider.GetService<BsctmpltDbContext>();
+    ArgumentNullException.ThrowIfNull(context);
+    context.Database.Migrate();
 }
 
 app.UseAuthorization();

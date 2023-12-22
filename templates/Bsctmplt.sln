@@ -1,17 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 25.0.1704.4
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bsctmplt.BusinessLayer", "Bsctmplt.BusinessLayer\Bsctmplt.BusinessLayer.csproj", "{FF7FCDE4-A378-4A73-80C4-7FBA2C2F6EE8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bsctmplt.BusinessLayer", "Bsctmplt.BusinessLayer\Bsctmplt.BusinessLayer.csproj", "{FF7FCDE4-A378-4A73-80C4-7FBA2C2F6EE8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bsctmplt.EntityFramework", "Bsctmplt.EntityFramework\Bsctmplt.EntityFramework.csproj", "{29AB75ED-752E-4BE1-A783-ECB15DB2DF93}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bsctmplt.EntityFramework", "Bsctmplt.EntityFramework\Bsctmplt.EntityFramework.csproj", "{29AB75ED-752E-4BE1-A783-ECB15DB2DF93}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bsctmplt.WebApi", "Bsctmplt.WebApi\Bsctmplt.WebApi.csproj", "{AAB2BBB8-FCF8-4DE9-BDD4-A0F3F607DC0D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bsctmplt.WebApi", "Bsctmplt.WebApi\Bsctmplt.WebApi.csproj", "{AAB2BBB8-FCF8-4DE9-BDD4-A0F3F607DC0D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bsctmplt.Entity", "Bsctmplt.Entity\Bsctmplt.Entity.csproj", "{9C13BA0B-87A2-41FB-B1E7-21E0D7DB5312}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bsctmplt.Entity", "Bsctmplt.Entity\Bsctmplt.Entity.csproj", "{9C13BA0B-87A2-41FB-B1E7-21E0D7DB5312}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bsctmplt.Dto", "Bsctmplt.Dto\Bsctmplt.Dto.csproj", "{F76C3C3D-CA56-44A2-B42D-2B0ECB2FD336}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bsctmplt.Dto", "Bsctmplt.Dto\Bsctmplt.Dto.csproj", "{F76C3C3D-CA56-44A2-B42D-2B0ECB2FD336}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bsctmplt.Repository", "Bsctmplt.Repository\Bsctmplt.Repository.csproj", "{E1BB9D5A-0325-4909-96C1-A4B8B2AF353E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{F76C3C3D-CA56-44A2-B42D-2B0ECB2FD336}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F76C3C3D-CA56-44A2-B42D-2B0ECB2FD336}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F76C3C3D-CA56-44A2-B42D-2B0ECB2FD336}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1BB9D5A-0325-4909-96C1-A4B8B2AF353E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1BB9D5A-0325-4909-96C1-A4B8B2AF353E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1BB9D5A-0325-4909-96C1-A4B8B2AF353E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1BB9D5A-0325-4909-96C1-A4B8B2AF353E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

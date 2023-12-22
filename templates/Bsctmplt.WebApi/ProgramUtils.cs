@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Bsctmplt.EntityFrameworkCore;
+using Bsctmplt.Repository;
+using Bsctmplt.EntityFramework.Repository;
 
 namespace Bsctmplt.WebApi
 {
@@ -16,6 +18,7 @@ namespace Bsctmplt.WebApi
 
             RegisterDB(builder);
             RegisterDependency(builder);
+            RegisterRepositories(builder);
         }
 
         private static void RegisterDB(WebApplicationBuilder builder)
@@ -27,6 +30,11 @@ namespace Bsctmplt.WebApi
         private static void RegisterDependency(WebApplicationBuilder builder)
         {
             builder.Services.AddSingleton<IConfiguration>(builder.Configuration);
+        }
+
+        private static void RegisterRepositories(WebApplicationBuilder builder)
+        {
+            builder.Services.AddScoped<ISampleRepository, SampleRepository>();
         }
     }
 }
