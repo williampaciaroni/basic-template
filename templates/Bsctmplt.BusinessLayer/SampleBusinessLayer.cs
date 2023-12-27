@@ -4,14 +4,9 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Bsctmplt.BusinessLayer
 {
-    public class SampleBusinessLayer
+    public class SampleBusinessLayer(ISampleRepository repository)
     {
-        private ISampleRepository _Repository;
-
-        public SampleBusinessLayer(ISampleRepository repository)
-        {
-            _Repository = repository;
-        }
+        private readonly ISampleRepository _Repository = repository;
 
         public int? GetValueById(int id)
         {

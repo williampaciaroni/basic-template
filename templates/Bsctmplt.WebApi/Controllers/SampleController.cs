@@ -14,14 +14,9 @@ using Bsctmplt.Repository;
 namespace Bsctmplt.WebApi.Controllers
 {
     [Route("api/[controller]")]
-    public class SampleController : Controller
+    public class SampleController(ISampleRepository repository) : Controller
     {
-        private SampleBusinessLayer _BusinessLayer;
-
-        public SampleController(ISampleRepository repository)
-        {
-            _BusinessLayer = new SampleBusinessLayer(repository);
-        }
+        private readonly SampleBusinessLayer _BusinessLayer = new(repository);
 
         [HttpGet]
         public IActionResult Get()
